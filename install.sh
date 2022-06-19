@@ -1,5 +1,6 @@
 #!/bin/bash
 
+apt install --assume-yes xfce4 desktop-base xfce4-terminal
 apt install dbus-x11 -y 
 apt install sudo -y  
 apt install bash -y  
