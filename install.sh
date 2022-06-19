@@ -21,6 +21,5 @@ apt install wget -y
 apt install zip -y 
 apt install unzip -y 
 apt install falkon -y 
-apt remove gnome-terminal -y
 apt-get autoclean -y 
-apt-get autoremove
+apt-get autoremove -y
