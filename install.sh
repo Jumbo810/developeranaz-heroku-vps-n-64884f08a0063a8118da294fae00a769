@@ -1,6 +1,5 @@
 #!/bin/bash
-passwd root
-sudo passwd root
+
 apt install xfce4 -y
 apt install desktop-base -y
 apt install xfce4-terminal -y
