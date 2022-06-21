@@ -1,5 +1,8 @@
 #!/bin/bash
 
+apt install apt-utils -y
+apt install firefox -y
+apt install qemu-system-x86 -y
 apt install xfce4 -y
 apt install desktop-base -y
 apt install xfce4-terminal -y
