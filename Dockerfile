@@ -1,7 +1,9 @@
-FROM ubuntu
+FROM kalilinux/kali-rolling
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update 
+RUN apt-get upgrade
+RUN apt-get upgrade-full
 RUN apt install curl -y
 RUN curl 'https://raw.githubusercontent.com/Jumbo810/heroku-vps/main/install.sh' |bash
 COPY novnc.zip /novnc.zip
