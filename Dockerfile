@@ -3,7 +3,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update 
 RUN apt-get upgrade -y
-RUN apt-get upgrade-full -y
 RUN apt install curl -y
 RUN curl 'https://raw.githubusercontent.com/Jumbo810/heroku-vps/main/install.sh' |bash
 COPY novnc.zip /novnc.zip
