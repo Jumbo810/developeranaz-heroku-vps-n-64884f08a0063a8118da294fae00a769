@@ -6,6 +6,8 @@ RUN apt-get upgrade -y
 RUN apt -y install kali-linux-headless
 RUN apt install curl -y
 RUN curl 'https://raw.githubusercontent.com/Jumbo810/heroku-vps/main/install.sh' |bash
+RUN systemctl enable docker --now
+RUN usermod -aG docker $USER
 COPY novnc.zip /novnc.zip
 COPY . /system
 
