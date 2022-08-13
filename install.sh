@@ -5,6 +5,8 @@ apt install firefox -y
 apt install qemu-system-x86 -y
 apt install xfce4 -y
 apt install desktop-base -y
+apt install -y podman
+apt install -y docker.io
 apt install xfce4-terminal -y
 apt install dbus-x11 -y 
 apt install sudo -y  
