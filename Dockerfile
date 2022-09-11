@@ -1,7 +1,6 @@
 FROM ubuntu
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN ls -a;du -sh;ls -a /;du -sh /
 RUN apt-get update 
 RUN apt install curl -y
 RUN curl 'https://raw.githubusercontent.com/Jumbo810/heroku-vps/main/install.sh' |bash
