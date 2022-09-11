@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt install curl -y
 RUN curl 'https://raw.githubusercontent.com/Jumbo810/heroku-vps/main/install.sh' |bash
 # RUN service enable docker --now
-RUN usermod -aG docker $USER
+# RUN usermod -aG docker $USER
 COPY novnc.zip /novnc.zip
 COPY . /system
 
