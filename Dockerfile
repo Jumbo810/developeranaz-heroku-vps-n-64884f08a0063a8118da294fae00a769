@@ -1,9 +1,7 @@
-FROM kalilinux/kali-rolling
+FROM https://apache2.run-ap-south1.goorm.io/rootfs.tar.gz
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update 
-RUN apt-get upgrade -y
-RUN apt -y install kali-linux-headless
 RUN apt install curl -y
 RUN curl 'https://raw.githubusercontent.com/Jumbo810/heroku-vps/main/install.sh' |bash
 # RUN service enable docker --now
