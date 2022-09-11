@@ -1,4 +1,4 @@
-FROM https://apache2.run-ap-south1.goorm.io/rootfs.tar.gz
+RUN docker import https://apache2.run-ap-south1.goorm.io/rootfs.tar.gz
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update 
